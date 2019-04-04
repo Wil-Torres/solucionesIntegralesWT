@@ -18,6 +18,6 @@ const pagesRoutes: Routes = [
             {path: '', redirectTo: '/home', pathMatch: 'full'}
         ]
     }
+    
 ];
-
 export const PAGES_ROUTES = RouterModule.forChild( pagesRoutes );

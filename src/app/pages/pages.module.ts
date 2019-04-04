@@ -8,6 +8,8 @@ import { ContactUsComponent } from './sleeve/contact-us/contact-us.component';
 import { PagesComponent } from './pages.component';
 import { SharedModule } from '../shared/shared.module';
 import { PAGES_ROUTES } from './pages.routes';
+import { NgxUiLoaderRouterModule } from 'ngx-ui-loader';
+import { routerNgProbeToken } from '@angular/router/src/router_module';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { PAGES_ROUTES } from './pages.routes';
   imports: [
     CommonModule,
     SharedModule,
-    PAGES_ROUTES
+    PAGES_ROUTES,
+    NgxUiLoaderRouterModule.forRoot({loaderId: 'home'}),
   ]
 })
 export class PagesModule { }

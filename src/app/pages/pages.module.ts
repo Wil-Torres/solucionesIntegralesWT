@@ -10,6 +10,8 @@ import { SharedModule } from '../shared/shared.module';
 import { PAGES_ROUTES } from './pages.routes';
 import { NgxUiLoaderRouterModule } from 'ngx-ui-loader';
 import { routerNgProbeToken } from '@angular/router/src/router_module';
+import { FormsModule } from '@angular/forms';
+import { SolutionsComponent } from './sleeve/solutions/solutions.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { routerNgProbeToken } from '@angular/router/src/router_module';
     AboutComponent,
     NewsComponent,
     ContactUsComponent,
-    PagesComponent
+    PagesComponent,
+    SolutionsComponent
   ],
   exports: [
     WaitComponent,
@@ -30,6 +33,7 @@ import { routerNgProbeToken } from '@angular/router/src/router_module';
   ],
   imports: [
     CommonModule,
+    FormsModule,
     SharedModule,
     PAGES_ROUTES,
     NgxUiLoaderRouterModule.forRoot({loaderId: 'home'}),

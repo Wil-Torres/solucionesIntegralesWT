@@ -14,7 +14,7 @@ const pagesRoutes: Routes = [
         children: [
             {path: 'home', component: HomeComponent},
             {path: 'about', component: AboutComponent},
-            {path: 'solutions', component: SolutionsComponent},
+            {path: 'solutions/:id', component: SolutionsComponent},
             {path: 'news', component: NewsComponent},
             {path: 'contact-us', component: ContactUsComponent},
             {path: '', redirectTo: '/home', pathMatch: 'full'}

@@ -15,11 +15,11 @@ export class SolutionsComponent implements OnInit {
   public set listServices(v: any[]) {
     this._listServices = v;
   }
-  private _listSolutions : any[] = [];
-  public get listSolutions() : any[] {
+  private _listSolutions : any = {};
+  public get listSolutions() : any {
     return this._listSolutions;
   }
-  public set listSolutions(v : any[]) {
+  public set listSolutions(v : any) {
     this._listSolutions = v;
   }
   

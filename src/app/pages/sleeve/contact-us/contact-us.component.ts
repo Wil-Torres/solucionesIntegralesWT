@@ -53,4 +53,8 @@ export class ContactUsComponent implements OnInit {
   ngOnInit() {
   }
 
+  guardar(){
+    alert("su mensaje ha sido enviado.")
+  }
+
 }
